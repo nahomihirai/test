@@ -5,7 +5,7 @@
 </head>
 <body>
     <script>
-        var verify = "hirai" + new Date();
+        var verify = "hirai" + new Date().getTime();
         var tag = document.createElement("script");
         tag.src = `https://images-test.xmax.jp/tracking/script.js?mv=10d5x2170xb9&type=1&verify=${verify}&volume=xxxx&value=xxxx`;
         document.body.appendChild(tag);
